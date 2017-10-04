@@ -19,8 +19,8 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover{
-  background-color: darkgray;
+nav a:hover, .dropdown:hover .btnDrop {
+  background-color: lightgray;
   color: black;
 }
 

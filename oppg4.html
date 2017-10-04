@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>¯\_(ツ)_/¯</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="masterindex4.css">
+    <link rel="stylesheet" type="text/css" href="masterindex.css">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
     <script>
 // <link rel="stylesheet" type="text/css" href="oppg4.css">
@@ -42,7 +42,7 @@
           document.getElementById("bg").src = bilde[2];
         }
         else if (h >=4 && h <=6) {
-          document.getElementById("Hilsen").innerHTML = "Du burde ikke eksistere på denne tiden av døgnet...";
+          document.getElementById("Hilsen").innerHTML = "Hvorfor endte det slik...";
           document.getElementById("bg").src = bilde[4];
         }
         else {
@@ -76,22 +76,14 @@
         <a href="oppg5.html" class="knapp">Spådom</a>
         <a href="oppg6.html" class="knapp">mix things u like</a>
         <a href="oppg7.html" class="knapp">0 - 100</a>
-        <div class="dropdown">
-        <button class="btnDrop">CSS</button>
-          <div class="dropdownContent">
-            <a target="_blank" href="masterindex.css">MasterCSS</a>
-            <a target="_blank" href="masterindex4.css">MasterCSS for oppg4</a>
-            <a target="_blank" href="index.css">CSS for oppg4</a>
-          </div>
-        </div>
       </div>
     </nav>
 
     <main>
       <img id="bg" src="">
-          <p id="Klokka"></p><br/>
-          <p id="Dato2"></p><br/>
-          <p id="Hilsen"></p>
+          <p class="txt" id="Klokka"></p><br/>
+          <p class="txt" id="Dato2"></p><br/>
+          <p class="txt" id="Hilsen"></p>
       </img>
     </main>
 
@@ -99,6 +91,6 @@
         <hr/>
         <p>&copy; Johanne berndtsson</p>
     </footer>
-    <!-- Footeren forsvinner og hele nettsiden forskyves haha, men det er ikke det som er viktig -->
+    <!-- Footeren blir inkludert i CSS'en (noe som den ikke skal) men det går fint -->
   </body>
 </html>
