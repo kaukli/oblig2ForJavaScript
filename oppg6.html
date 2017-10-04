@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="masterindex.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <title>mal</title>
+    <script>
+
+    /*  window.onload = oppstart;
+
+      Dette funket ikke helt så det var lettere å gjøre det slik.
+
+      function oppstart(){
+        document.getElementById("utfor").onclick = utfor();
+      }
+*/
+      function utfor() {
+
+        var skriv = document.getElementById("txtSkriv").value;
+        var skriv1 = document.getElementById("txtSkrivMer").value;
+
+        var i;
+
+        console.log(skriv);
+
+        for (i = 0; i < skriv; i++) {
+
+          document.getElementById("utskrift").innerHTML += skriv1 + "</br>";
+        }
+
+      }
+
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="topnav" id="navigasjon">
+        <a href="oblig2.html" class="knapp">Registrer deg!</a>
+        <a href="oppg4.html" class="knapp">Look at them asesthetics</a>
+        <a href="oppg5.html" class="knapp">Spådom</a>
+        <a href="oppg6.html" class="knapp">mix things u like</a>
+        <a href="oppg7.html" class="knapp">0 - 100</a>
+        <div class="dropdown">
+        <button class="btnDrop">CSS</button>
+          <div class="dropdownContent">
+            <a target="_blank" href="masterindex.css">MasterCSS</a>
+            <a target="_blank" href="masterindex4.css">MasterCSS for oppg4</a>
+            <a target="_blank" href="index.css">CSS for oppg4</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <h1>Print amout of things u like!!11!!</h1>
+    </header>
+
+    <main>
+      <input id="txtSkriv" type="value" placeholder="Antall">
+      <input id="txtSkrivMer" type="value" placeholder="Ting">
+      <button onclick="utfor()" id="utfor" type="button">Utfør</button> </br>
+      <p>Se det du liker best så mye du ønsker å se!</p>
+      <p id="utskrift"></p>
+    </main>
+
+    <footer>
+        <hr/>
+        <p>&copy; Johanne berndtsson</p>
+    </footer>
+  </body>
+</html>
